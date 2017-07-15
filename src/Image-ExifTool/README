@@ -74,6 +74,9 @@ ExifTool can be downloaded from
 
 RUNNING
 
+python sortphotos.py -c "d:\PHOTOS" "d:\photos_sorted" --recursive --rename %Y-%m-%d_%H-%M-%S --ignore-tags File:FileModifyDate File:FileCreateDate File:FileAccessDate
+del /S *.thm
+
 The exiftool script can be run right away without the need to install
 Image::ExifTool.  For example, from within the exiftool directory you can
 extract the information from one of the included test files by typing:
